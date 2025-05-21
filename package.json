@@ -1,0 +1,35 @@
+{
+  "name": "token-iterator",
+  "version": "1.0.0",
+  "description": "Token iterator for parser",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts"
+  ],
+  "scripts": {
+    "test": "tsx ./test/index.test.ts",
+    "prepack": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikimasek/token-iterator.git"
+  },
+  "keywords": [
+    "token",
+    "iterator"
+  ],
+  "author": "Dominik Mašek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nikimasek/token-iterator/issues"
+  },
+  "homepage": "https://github.com/nikimasek/token-iterator#readme",
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
