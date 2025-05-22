@@ -1,4 +1,4 @@
-export type Token = "";
+export type Token = string;
 
 /**
  * A TokenIterator is an object that allows you to iterate over tokens in a string.
@@ -29,7 +29,7 @@ function* regexIterator(tokenPattern: RegExp, str: string): Generator<Token> {
     const tokens = new RegExp(tokenPattern, flags);
     let match: RegExpExecArray | null;
     while ((match = tokens.exec(str)) !== null) {
-        yield match[0] as Token;
+        yield match[0];
     }
 }
 
